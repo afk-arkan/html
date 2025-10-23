@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        background: #a39895;
+        background: radial-gradient(
+          circle,
+          rgba(163, 152, 149, 1) 0%,
+          rgba(33, 29, 29, 1) 100%
+        );
+        height: 70px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      h1 {
+        color: white;
+        font-size: 50px;
+      }
+      .container-1 {
+        background: #ffffff;
+        margin: 90px;
+        padding: 40px;
+        width: 250px;
+        height: 300px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+        border-bottom: 7px solid #fc6347;
+        border-top: 70px solid #fc6347;
+      }
+
+      li {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 15px;
+      }
+      .section {
+        display: flex;
+        justify-content: center;
+      }
+      /* --------- */
+      .container-2 {
+        background: #ffffff;
+        margin: 90px;
+        padding: 40px;
+        width: 250px;
+        height: 300px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+        border-bottom: 7px solid #ffb901;
+        border-top: 70px solid #ffb901;
+      }
+
+      li {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 15px;
+      }
+      .section {
+        display: flex;
+        justify-content: center;
+      }
+
+      /* --------- */
+      .container-3 {
+        background: #ffffff;
+        margin: 90px;
+        padding: 40px;
+        width: 250px;
+        height: 300px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+        border-bottom: 7px solid #01a4ef;
+        border-top: 70px solid #01a4ef;
+      }
+
+      li {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 15px;
+      }
+      .section {
+        display: flex;
+        justify-content: center;
+      }
+      .container-3 dd {
+        margin-left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 align="center">Lists in HTML</h1>
+    </nav>
+    <section class="section">
+      <div class="container-1">
+        <h2
+          style="
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+              'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+          "
+        >
+          Ordered list
+        </h2>
+
+        <div>
+          <ol type="1">
+            <br />
+            <li>Information Gathering</li>
+            <br />
+            <li>Palnnilng</li>
+            <br />
+            <li>Design</li>
+            <br />
+            <li>Development</li>
+            <br />
+            <li>Testing & Deployment</li>
+            <br />
+            <li>Maintenance</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="container-2">
+        <h2
+          style="
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+              'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+          "
+        >
+          Unordered list
+        </h2>
+
+        <div>
+          <ul type="square">
+            <li>HTML</li>
+            <br />
+            <li>CSS</li>
+            <br />
+          </ul>
+          <hr style="border: 1px solid #ffb901" />
+          <br />
+          <ul type="circle">
+            <li>SOL</li>
+            <br />
+            <li>PHP</li>
+            <br />
+          </ul>
+          <hr style="border: 1px solid #ffb901" />
+          <ul type="disc">
+            <br />
+            <li>JavaScript</li>
+            <br />
+            <li>Phyton</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container-3">
+        <h2
+          style="
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+              'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+          "
+        >
+          Desription list
+        </h2>
+
+        <div>
+          <dl>
+            <dt>HTML</dt>
+            <dd>
+              HTML standsfor Hypertext Markup Language.HTML is the standard
+              markup language for creating web pages. HTML describes the
+              structure of a web page.
+            </dd>
+            <dt style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">CSS</dt>
+            <dd>
+             Css is the acronym of " Cascading Style Sheets". Css is language used to style an HTML document.Css describes how HTML elements should be displayed.
+            </dd>
+            <dt>PHP</dt>
+            <dd>
+             PHP is an acronym for "PHP: Hypertext Preprocessor". PHP is a server scripting language and a powerful tool for making dynamic and interactive Web pages.
+            </dd>
+
+          </dl>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
