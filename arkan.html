@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #f5fcff;
+        height: 100px;
+      }
+      /* header */
+      .header-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #fff;
+        position: sticky;
+        height: 80px;
+        top: 0;
+        box-shadow: 0px 3px 95px rgba(10, 10, 10, 0.2);
+      }
+      header a {
+        font-family: "roboto", sans-serif;
+        font-size: 15px;
+        text-decoration: none;
+        color: #1c1e53;
+        font-weight: 200;
+        margin: 0 10px;
+      }
+      header a:hover {
+        color: #5e3bee;
+      }
+      header img {
+        max-width: 150px;
+        height: auto;
+        margin-left: 30px;
+      }
+      header button {
+        font-size: 15px;
+        padding: 19px 25px;
+        background-color: #fff;
+        color: #5e3bee;
+        border: 2px solid #5e3bee;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 20px;
+      }
+      header button:hover {
+        background-color: #5e3bee;
+        color: #fff;
+        transition: 0.3s;
+      }
+      /* section */
+
+      .banner {
+        background-color: #f5fcff;
+        text-align: left;
+        padding: 130px 300px 0px 20px;
+        display: flex;
+      }
+
+      .banner h3 {
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "roboto", sans-serif;
+        color: #1c1e53;
+        text-align: left;
+        font-weight: bold;
+        margin-top: 60px;
+        margin-left: 50px;
+      }
+
+      .banner h1 {
+        font-size: 50px;
+        font-family: "roboto", sans-serif;
+        color: #282938;
+        text-align: left;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-bottom: 40px;
+      }
+
+      .banner p {
+        font-size: 20px;
+        font-weight: 100;
+        font-family: "roboto", sans-serif;
+        color: #1c1e53;
+        text-align: left;
+        font-weight: normal;
+        margin-top: 10px;
+        margin-left: 50px;
+        word-spacing: 1px;
+      }
+
+      .banner button {
+        font-size: 21.33px;
+        padding: 15px 20px;
+        background-color: #5e3bee;
+        color: #fff;
+        border: none;
+        border-radius: 5.33px;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-bottom: 40px;
+      }
+
+      .banner button:hover {
+        background-color: #fff;
+        color: #5e3bee;
+        transition: 0.3s;
+      }
+      .banner img {
+        width: 150%;
+        margin-left: 200px;
+        margin: auto;
+      }
+      .text {
+        margin-left: 40px;
+        margin-bottom: 400px;
+      }
+
+      .container h3 {
+        font-size: 21.33px;
+        font-weight: 700;
+        font-family: "roboto", sans-serif;
+        color: #1c1e53;
+        text-align: left;
+        font-weight: bold;
+        margin-top: 50px;
+        margin-left: 90px;
+      }
+
+      .container h1 {
+        font-size: 50px;
+        font-weight: 700;
+        font-family: "roboto", sans-serif;
+        color: #1c1e53;
+        text-align: left;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-left: 90px;
+        margin-right: 200px;
+      }
+      .grid-container {
+        display: flex;
+        gap: 5px;
+        padding: 100px;
+      }
+
+      .grid-item {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "roboto", sans-serif;
+        background-color: #ffffff;
+        text-align: left;
+        width: 200px;
+        height: 300px;
+        margin-left: 40px;
+        transition: all 0.3s;
+        margin-bottom: 300px;
+      }
+      .grid-item {
+        width: 400px;
+        height: 400px;
+        gap: 40px;
+        border-radius: 10px;
+      }
+      .grid-item-1 {
+        display: flex;
+      }
+      .grid-item p {
+        padding-top: 20px;
+        padding-left: 20px;
+        color: #1c1e53;
+        font-weight: 100;
+      }
+      .grid-item:hover {
+        border-bottom: #5e3bee 10px solid;
+        transform: translateY(-10px);
+        transition: all 0.3s;
+      }
+
+      .grid-container {
+        display: flex;
+        gap: 5px;
+        padding: 100px;
+      }
+
+      .about-me {
+        background-color: #ffffff;
+        height: 100px;
+        text-align: left;
+        padding: 100px 300px 500px 20px;
+        display: flex;
+        align-items: center;
+      }
+      .about-me img {
+        width: 500px;
+        margin-left: 10px;
+        margin-top: 50px;
+      }
+      .teks-about h6 {
+        margin-left: 180px;
+        color: #000000;
+        font-family: "roboto", sans-serif;
+        font-size: 10px;
+        margin: 0px 10px 0px 100px;
+      }
+      .teks-about h1 {
+        margin-left: 180px;
+        font-family: "roboto", sans-serif;
+        color: #000000;
+        font-size: 40px;
+        font-weight: bold;
+        margin: 0px 0px 0px 100px;
+      }
+      .teks-about p {
+        margin-left: 10px;
+        font-family: "roboto", sans-serif;
+        color: #1c1e53;
+        font-size: 15px;
+        margin: 0px 0px 0px 100px;
+      }
+      .teks-about {
+        margin-left: 20px;
+      }
+
+      .Portfolio {
+        margin-top: 100px;
+        margin: 0px 0px 0px 100px;
+      }
+      .Portfolio h5 {
+        font-family: "roboto", sans-serif;
+        color: #1c1e53;
+        font-size: 20px;
+        margin: 0px 0px 0px 100px;
+      }
+      .Portfolio h1 {
+        font-family: "roboto", sans-serif;
+        color: #1c1e53;
+        font-size: 40px;
+        font-weight: bold;
+        margin: 0px 0px 0px 100px;
+      }
+      .button-2{
+        background-color: #5e3bee;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-bottom: 40px;
+       
+       
+      }
+      .button-2:hover {
+        background-color: #fff;
+        color: #5e3bee;
+        border: 1px solid #5e3bee;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+      }
+
+      label {
+        font-family: "roboto", sans-serif;
+        font-size: 15px;
+        margin-bottom: 10px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 0.2px solid #5e3bee;
+        border-radius: 5px;
+      }
+      .flex-container {
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        padding: 20px;
+        border-radius: 1.8px solid #5e3bee;
+      }
+
+      .flex-container {
+        width: 600px;
+        padding: 20px;
+        border-radius: 1.8px solid #5e3bee;
+        margin: 8px;
+        text-align: left;
+        border-radius: 10px;
+        gap: 30px;
+      }
+
+      .flex-container p {
+        font-size: 15px;
+        font-family: "roboto", sans-serif;
+        color: #1c1e53;
+      }
+      input[type="tel, email, text"] {
+        font-size: 18px;
+        padding: 15px 18px;
+        border-radius: 8px;
+        border: 1.8px solid #5e3bee;
+        outline: 0;
+      }
+      input[type="submit"] {
+        font-size: 18px;
+        padding: 15px 18px;
+        border-radius: 8px;
+        border: 1.8px solid #5e3bee;
+        outline: 0;
+        background-color: #5e3bee;
+        color: #ffffff;
+      }
+
+      .header-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 89px;
+        background-color: #f5fcff;
+        position: sticky;
+        height: 150px;
+      }
+      .header-2 a {
+        font-family: "roboto", sans-serif;
+        font-size: 30px;
+        text-decoration: none;
+        color: #1c1e53;
+        font-weight: 400;
+        margin: 0 15px;
+      }
+      .header-2 a:hover {
+        color: #5e3bee;
+      }
+      .header-2 img {
+        max-width: 100%;
+        height: auto;
+      }
+      .header-2 button {
+        font-size: 25px;
+        padding: 30px 42px;
+        background-color: #fff;
+        color: #5e3bee;
+        border: 2px solid #5e3bee;
+        border-radius: 5.33px;
+        cursor: pointer;
+      }
+      .header-2 button:hover {
+        background-color: #5e3bee;
+        color: #fff;
+        transition: 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header-1">
+      <img src="./Logo (3).png" alt="gambar" width="120px" />
+      <nav style="margin: 0px">
+        <a style="color: #5e3bee" href="">Home</a>
+        <a href="">Portfolio</a>
+        <a href="">About me</a>
+      </nav>
+      <button>Contact Me</button>
+    </header>
+
+    <section class="banner">
+      <div>
+        <h3>Hey, I am John</h3>
+        <h1>
+          Membangun <span style="color: #5e3bee">Website</span>
+          Impian Anda Dengan Kuliatas Terbaik
+        </h1>
+        <p>
+          Saya Seorang Web Developer berpengalaman yang <br />
+          membantu anda menciptakan Website fungsional, <br />
+          estetis, dan optimal untuk segala kebutuhan digital anda. <br />
+        </p>
+        <button>Get In Touch</button>
+      </div>
+      <div class="img">
+        <img src="./Group 11 1.png" alt="gambar" width="350" />
+      </div>
+    </section>
+
+    <section class="container">
+      <div>
+        <h3>My Skill</h3>
+        <h1>Keahlian Saya</h1>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-item">
+          <div>
+            <img src="./Strategy & Direction.png" alt="gambar" height="100" />
+            <h2 style="font-size: 30px">Strategy & Direction</h2>
+            <p>
+              Merencankan strategi digital yang efektif untuk mencapai tujuan
+              bisnis Anda.
+            </p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img src="./Branding & Logo.png" alt="gambar" height="100" />
+          <h2 style="font-size: 30px">Branding & Logo</h2>
+          <p>
+            Menciptakan identitas visual yang kuat dan logo yang mudah diingat
+            untuk brand anda
+          </p>
+        </div>
+        <div class="grid-item">
+          <img src="./UI & UX Design.png" alt="gambar" height="100" />
+          <h2 style="font-size: 30px">UI & UX Design</h2>
+          <p>
+            Merencankan desain yang menarik dan intuitif untuk meningkatkan
+            pengalaman pengguna.
+          </p>
+        </div>
+        <div class="grid-item">
+          <img src="./Webflow Development.png" alt="gambar" width="100" />
+          <h2 style="font-size: 30px">Webflow Development</h2>
+          <p>
+            Mengembangkan website responsif dan fungsional dengan teknologi
+            terkini.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="about-me">
+      <div class="img">
+        <img src="./About Me (1).png" alt="gambar" />
+      </div>
+      <div class="teks-about">
+        <h6>About</h6>
+        <br />
+        <h1>Tentang Saya</h1>
+        <p style="letter-spacing: 1px">
+          Halo, nama saya Rezky. Saya adalah seorang web developer yang telah
+          berpengalaman selama lebih dari 2 tahun dalam merancang dan
+          mengembangkan website untuk berbagai industri.
+        </p>
+        <br />
+        <br />
+        <p style="letter-spacing: 1px">
+          Keahlian saya meliputi HTML, CSS, JavaScript, dan teknologi
+          <br />terbaru lainnya untuk membangun web usaha untuk memberikan
+          solusi terbaik sesuai dengan kebutuhanite yang cepat, responsif, dan
+          mudah digunakan. saya selalu ber kilen.
+        </p>
+      </div>
+    </section>
+    <section class="Portfolio">
+      <div>
+        <h5>Portfolio</h5>
+        <h1>My Portfolio</h1>
+      </div>
+
+      <div style=
+      "display: flex;">
+      <div
+        style="
+          display: inline-block;
+          background-color: rgb(255, 255, 255);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          width: 450px;
+          height: 550px;
+          margin: 10px;
+        "
+      >
+        <img src="./Image.png5.png" alt="gambar" width="450" />
+        <br>
+        <h1 style="font-size: 30px; font-weight: bold; margin-left: 20px;">E-Commerce website</h1>
+        <br>
+        <p style="letter-spacing: 1px; margin-left: 20px">
+          Menciptakan identitas visual yang kuat dan logo yang mudah diingat
+          untuk brand anda.
+        </p>
+        <button class="button-2">View In Dribble ↗</button>
+      </div>
+      <div
+        style="
+          display: inline-block;
+          background-color: rgb(255, 255, 255);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          width: 450px;
+          height: 550px;
+          margin: 10px;
+        "
+      >
+        <img src="./Image.png1.png" alt="gambar" width="450" />
+        <br>
+        <h1 style="font-size: 30px; font-weight: bold; margin-left: 20px;">Aplikasi Portfolio Pribadi</h1>
+        <br>
+        <p style="letter-spacing: 1px; margin-left: 20px">
+          Portfolio interaktif untuk menampilkan proyek dan pengalaman kerja.
+        </p>
+        <button class="button-2">View In Dribble ↗</button>
+      </div>
+      <div
+        style="
+          display: inline-block;
+          background-color: rgb(255, 255, 255);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          width: 450px;
+          height: 550px;
+          margin: 10px;
+        "
+      >
+        <img src="./Image.png4.png" alt="gambar" width="450" />
+        <br>
+        <h1 style="font-size: 30px; font-weight: bold; margin-left: 20px;">Blog Pribadi</h1>
+        <br>
+        <p style="letter-spacing: 1px; margin-left: 20px">
+          Blog untuk berbagi artikel dan tutorial tentang pengembangn web.
+        </p>
+        <button class="button-2">View In Dribble ↗</button>
+      </div>
+      </div>
+    </section>
+
+    
+
+
+
+    <section class="contact-me">
+      <br>
+      <br>
+      <br>
+      <div align="center">
+        <h5>Get In Touch</h5>
+        <br />
+        <h1>Contact me</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+
+      <form>
+        <div class="flex-container">
+          <div class="flex-item">
+            <label for="first">Fist Name</label>
+            <input type="text" />
+          </div>
+          <div class="flex-item">
+            <label for="last">Last Name</label>
+            <input type="text" />
+          </div>
+        </div>
+        <div class="flex-container">
+          <div class="flex-item">
+            <label for="email">Email</label>
+            <input type="email" />
+          </div>
+          <div class="flex-item">
+            <label for="phone">Phone Number</label>
+            <input type="tel" />
+          </div>
+        </div>
+
+        <div class="flex-container">
+          <div class="flex-item">
+            <label for="message"></label>
+            <p>
+              <label class="topic"> Choose a topic</label>
+
+              <select name="topic-2">
+                <option value="topic-1">topic-1</option>
+                <option value="topic-2">topic-2</option>
+                <option value="topic-3">topic-3</option>
+                <option value="topic-4">topic-4</option>
+                <option value="topic-5">topic-5</option>
+              </select>
+            </p>
+            <p>
+              <label> Message</label>
+
+              <textarea placeholder="type your message" cols="100" rows="10">
+              </textarea>
+            </p>
+          </div>
+        </div>
+        <div class="flex-container">
+          <div class="flex-item">
+            <input type="submit" value="Submit" />
+          </div>
+        </div>
+      </form>
+    </section>
+    <footer>
+      <header class="header-2">
+        <img src="./Logo (3).png" alt="gambar" width="100px" />
+        <nav style="margin: 0px; font-size: 5px;">
+          <a style="color: #5e3bee" href="">Home</a>
+          <a href="">Portfolio</a>
+          <a href="">About me</a>
+          <a href="">Contact</a>
+        </nav>
+
+        <div>
+          <img
+            src="https://cdn3.iconfinder.com/data/icons/feather-5/24/facebook-256.png"
+            alt=""
+            width="40"
+            gap
+          />
+
+          <img
+            src="https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-2-512.png"
+            alt="80"
+            width="40"
+          />
+          <img
+            src="https://cdn3.iconfinder.com/data/icons/social-network-solid/100/Twitter-512.png"
+            alt="80"
+            width="40"
+          />
+          <img
+            src="https://cdn3.iconfinder.com/data/icons/font-awesome-brands/512/linkedin-512.png"
+            alt="80"
+            width="40"
+          />
+        </div>
+      </header>
+      <hr style="color: #000000" />
+      <br />
+      <br />
+      <p
+        style="
+          font-weight: bold;
+          font-size: 10px;
+          font-family: 'roboto', sans-serif;
+          margin-left: 30px;
+        "
+      >
+        Made with ❤️ by Airdokan
+      </p>
+      <div
+        style="
+          display: flex;
+          gap: 10px;
+          justify-content: end;
+          font-family: 'roboto', sans-serif;
+          font-size: 15px;
+          margin-right: 30px;
+        "
+      >
+        <p>Privacy Policy</p>
+        <p>Terms of service</p>
+        <p>Cookie settings</p>
+      </div>
+    </footer>
+  </body>
+</html>
